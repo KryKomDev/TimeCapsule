@@ -41,6 +41,11 @@ header p #n-contact {
   -webkit-text-decoration: underline 2px solid rgba(23, 82, 209, 0);
           text-decoration: underline 2px solid rgba(23, 82, 209, 0);
 }
+header p #n-index {
+  color: #891bf7;
+  -webkit-text-decoration: underline 2px solid rgba(137, 27, 247, 0);
+          text-decoration: underline 2px solid rgba(137, 27, 247, 0);
+}
 header p a {
   text-decoration: none;
   transition-duration: 0.4s;
@@ -72,6 +77,11 @@ header p:hover #n-contact {
   color: #1c64ff;
   -webkit-text-decoration: underline 2px solid #1752d1;
           text-decoration: underline 2px solid #1752d1;
+}
+header p:hover #n-index {
+  color: #ab1bff;
+  -webkit-text-decoration: underline 2px solid #891bf7;
+          text-decoration: underline 2px solid #891bf7;
 }
 
 body {
@@ -229,8 +239,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #about h3 {
   font-size: x-large;
-  color: #3aa513;
-  margin-top: 60px;
+  color: #ccc;
+  margin-top: 100px;
 }
 #about a {
   color: #49d117;

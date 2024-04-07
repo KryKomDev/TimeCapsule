@@ -1,16 +1,8 @@
 @use 'util/colors';
+@use 'util/center';
 
 * {
     font-family: "JetBrains Mono";
-}
-
-@mixin center {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
 }
 
 header {
@@ -52,6 +44,11 @@ header {
             text-decoration: underline 2px solid rgba($color: colors.$blue-3, $alpha: 0.0);
         }
 
+        #n-index {
+            color: colors.$purple-4;
+            text-decoration: underline 2px solid rgba($color: colors.$purple-4, $alpha: 0.0);
+        }
+
         a {
             text-decoration: none;
             transition-duration: 0.4s;
@@ -85,6 +82,11 @@ header {
             color: colors.$blue-5;
             text-decoration: underline 2px solid rgba($color: colors.$blue-3, $alpha: 1.0);
         }
+
+        #n-index {
+            color: colors.$purple-5;
+            text-decoration: underline 2px solid rgba($color: colors.$purple-4, $alpha: 1.0);
+        }
     }
 }
 
@@ -108,7 +110,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #home {
-    @include center();
+    @include center.center();
 
     margin: 60px;
     margin-top: 0;
@@ -135,7 +137,7 @@ body::-webkit-scrollbar-thumb:hover {
     border-bottom: 1px solid colors.$gray-3;
 
     .header {
-        @include center();
+        @include center.center();
 
         h1 {
             color: colors.$orange-2;
@@ -179,7 +181,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 100px;
 
     .header {
-        @include center();
+        @include center.center();
 
         h1 {
             color: colors.$yellow-2;
@@ -201,7 +203,7 @@ body::-webkit-scrollbar-thumb:hover {
         }
         
         #left, #right {
-            @include center();
+            @include center.center();
             width: 50%;
 
             img {
@@ -231,7 +233,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-right: 100px;
 
     .header {
-        @include center();
+        @include center.center();
 
         h1 {
             color: colors.$green-1;
@@ -247,8 +249,8 @@ body::-webkit-scrollbar-thumb:hover {
 
     h3 {
         font-size: x-large;
-        color: colors.$green-2;
-        margin-top: 60px;
+        color: colors.$gray-12;
+        margin-top: 100px;
     }
 
     a {
@@ -266,7 +268,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-right: 100px;
 
     .header {
-        @include center();
+        @include center.center();
 
         h1 {
             color: colors.$blue-2;
@@ -284,7 +286,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     form {
-        @include center();
+        @include center.center();
 
         table {
             width: 100%;
@@ -361,7 +363,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 footer {
-    @include center();
+    @include center.center();
 
     p {
         color: colors.$gray-8;

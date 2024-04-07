@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Capsule</title>
+    <link rel="stylesheet" href="style-mobile.css">
+
+    <script>
+        function isMobileDevice() {
+			return window.matchMedia("only screen and (max-width: 760px)").matches;
+		}
+
+        if (!isMobileDevice()) {
+            window.alert("lhals zmrde za chvilku te poslem jinam");
+            window.location.replace("home.html");
+        }
+    </script>
+</head>
+<body>
+    <div id="home">
+        
+    </div>
+    <div id="legacy">
+        
+    </div>
+    <div id="photos">
+        
+    </div>
+    <div id="about">
+        
+    </div>
+    <div id="contact">
+        
+    </div>
+</body>
+</html>
